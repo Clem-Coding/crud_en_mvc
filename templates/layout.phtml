@@ -37,17 +37,15 @@
         <?php
         if ($route === "show_user") {
             require "templates/users/show.phtml";
-        } elseif ($route === "list") {
-            require "templates/users/list.phtml";
         } elseif ($route === "update_user") {
             require "templates/users/update.phtml";
         } elseif ($route === "create_user") {
             require "templates/users/create.phtml";
+        } else {
+            require "templates/users/list.phtml";
         }
         ?>
     </div>
-
-
 
 </body>
 

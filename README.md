@@ -1,8 +1,10 @@
-# Le but de l’exercice
+# Le crud contre-attaque!
+
+## Le but de l’exercice
 
 Dans l’exercice précédent, vous avez appris un des fondamentaux de l’implémentation du MVC : la gestion du routing. Mais comme vous avez pu le constater, cela ne concerne que deux des trois lettres du MVC. Vous avez utilisé des Controllers et des Templates : le V et le C donc. Dans cet exercice, nous allons rajouter le M : les Models et Managers et la gestion de la base de données.
 
-# Les modalités
+## Les modalités
 
 Sur cet exercice, vous allez devoir progresser étape par étape et m’envoyer un message à chaque fin d’étape pour que je vérifier votre code et vous donne s’il est bon la suite des consignes.
 
@@ -12,11 +14,11 @@ Cet exercice doit me permettre de jauger individuellement pour chacun et chacune
 
 Merci de jouer le jeu 😊
 
-# Vos repository
+## Vos repository
 
 Pour ce projet, merci de rendre vos repository publics, et de faire à minima un add/commit/push à la fin de chaque étape.
 
-# CRUD en MVC
+## CRUD en MVC
 
 Les contenus du cours [BRE03 Web Dev Course](https://kornog-dev.github.io/BRE03/) © 2024 par [Mari Doucet](https://github.com/kornog-dev) sont sous licence [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)
 
@@ -50,12 +52,25 @@ Préremplissez vos templates avec le strict minimum, la structure de base d'une 
 Il y a plus de templates que de méthodes, que pouvez-vous en déduire ? Répondez-moi dans un message sur Discord.
 
 ```js
-//Les méthodes checkCreate() et checkUpdate() ne servent pas afficher les template mais contiennent la logique nécessaire à vérifier
-//les données envoyées par le formulaire que ce soit pour la création d'un user ou un udpate d'un user.
+//Les méthodes checkCreate() et checkUpdate() ne servent pas afficher les template mais contiennent la logique nécessaire
+// à vérifier les données envoyées par le formulaire que ce soit pour la création d'un user ou un udpate d'un user.
 
 //La méthode delete() servira de logique pour supprimer un user.
 ```
 
-Réduire
-etape-1.md
-2 Ko
+## Étape 2
+
+Grâce aux déductions de l'étape précédente, vous allez pouvoir mettre en place le squelette de votre `UserController`, créez donc la classe et ses méthodes. Pour les méthodes dont vous avez déduit ce qu'elles doivent afficher, préparez la variable `$route` et faites un `require` du layout.
+
+Une fois que c'est fait, vérifiez que vos routes affichent bien le bon template. Comment pourriez-vous vous simplifier ces tests ?
+
+```js
+//Pour tester les routes, on peut rentrer chaque url dans le navigateur.
+//exemple :http://127.0.0.1/Crud_en_mvc/index.php?route=create_user
+//et un url qui n'existe pas, pour vérifier que le template list est bien appelé dans tous les autres cas
+//exemple : 127.0.0.1/Crud_en_mvc/index.php?route=blablabla
+```
+
+> 💡 N'oubliez pas de require le fichier `controllers/UserController.php` dans votre fichier `config/autoload.php`
+
+Une fois que vous avez terminé cette étape, envoyez-moi un message sur Discord pour obtenir la suite des consignes.
