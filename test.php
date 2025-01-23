@@ -1,4 +1,0 @@
-<?php
-
-
-// test des isntances 

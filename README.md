@@ -91,3 +91,16 @@ Nous allons commencer par créer le modèle qui permet de représenter la table 
 Dans le fichier `models/User.php` créez une classe `User` qui correspond à la table `users` de votre base de données.
 
 > 💡 N'oubliez pas de require le fichier `models/User.php` dans votre fichier `config/autoload.php`
+
+## Étape 5
+
+Dans cette étape, nous allons gérer la connexion à votre base de données.
+
+Dans le fichier `managers/AbstractManager.php`, vous allez créer une classe abstraite `AbstractManager`, elle n'a qu'un seul attribut `protected`, appelé `$db`, qui est une instance de la classe `PDO` (fournie par PHP, rien à require).
+
+Le constructeur de la classe ne prend pas de paramètres, par contre, il initialise son attribut `$db` avec les informations de connexion à votre base de données.
+
+> 💡 N'oubliez pas de require le fichier `managers/AbstractManager.php` dans votre fichier `config/autoload.php`
+
+Une fois que cette étape est terminée, envoyez-moi un message sur Discord pour obtenir la suite des consignes.
+Réduire
