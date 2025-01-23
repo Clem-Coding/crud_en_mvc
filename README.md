@@ -53,7 +53,7 @@ Il y a plus de templates que de méthodes, que pouvez-vous en déduire ? Répond
 //Les méthodes checkCreate() et checkUpdate() ne servent pas afficher les template mais contiennent la logique nécessaire à vérifier
 //les données envoyées par le formulaire que ce soit pour la création d'un user ou un udpate d'un user.
 
-//La méthode dekete() servira de logique pour supprimer un user.
+//La méthode delete() servira de logique pour supprimer un user.
 ```
 
 Réduire
