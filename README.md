@@ -117,3 +117,16 @@ Implémentez ces méthodes en adaptant la situation à la classe `User` et à la
 > 💡 N'oubliez pas de require le fichier `managers/UserManager.php` dans votre fichier `config/autoload.php`
 
 Une fois que cette étape est terminée, envoyez-moi un message sur Discord pour obtenir la suite des consignes.
+
+## Étape 7
+
+Maintenant que vous avez mis en place les méthodes de votre UserManager, je vais vous demander de deviner quelle méthode du UserManager sera appelée dans quelle méthode du UserController.
+
+Notez sur un fichier les correspondances entre les méthodes de Manager et de Controller et envoyez-les-moi sur Discord pour obtenir la suite des consignes.
+
+```js
+// La méthode findOne() du UserManager sera appelée dans la méthode show() du UserController.
+// La méthode create() du UserManager sera appelée dans la méthode checkCreate() du UserController.
+// La méthode update() du UserManager sera appelée dans la méthode checkUpdate() du UserController.
+// La méthode findAll() du UserManager sera appelée dans la méthode list() du UserController.
+```
