@@ -68,6 +68,7 @@ class UserManager extends AbstractManager
         ];
 
         $query->execute($parameters);
+        $user->setId($this->db->lastInsertId());
     }
 
 
