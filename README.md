@@ -69,8 +69,15 @@ Une fois que c'est fait, vérifiez que vos routes affichent bien le bon template
 //exemple :http://127.0.0.1/Crud_en_mvc/index.php?route=create_user
 //et un url qui n'existe pas, pour vérifier que le template list est bien appelé dans tous les autres cas
 //exemple : 127.0.0.1/Crud_en_mvc/index.php?route=blablabla
+
+//ou intialiser la variable $route avec les valeurs qu'on veut tester dans layout.phtml'
+//ou mettre les liens dans une navbar
 ```
 
 > 💡 N'oubliez pas de require le fichier `controllers/UserController.php` dans votre fichier `config/autoload.php`
 
-Une fois que vous avez terminé cette étape, envoyez-moi un message sur Discord pour obtenir la suite des consignes.
+## Étape 3
+
+Dans cette étape, je vais vous demander d'utiliser le logiciel de votre choix (canva, Google Draw, MS Paint ...) pour créer un schéma de ce qui se passe lorsque vous appelez l'URL `index.php?route=create_user`. Vous pouvez vous inspirer du schéma de fonctionnement du MVC présent dans le cours.
+
+![image schéma](diagram.png)

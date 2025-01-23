@@ -8,7 +8,6 @@ class UserController
     public function show(): void
     {
 
-        //définition de la variable $route qui va être transmise au layout.phtml grace au require
         $route = "show_user";
         require "templates/layout.phtml";
     }
@@ -36,6 +35,8 @@ class UserController
 
     public function list(): void
     {
+
+        $route = "list";
         require "templates/layout.phtml";
     }
 }
