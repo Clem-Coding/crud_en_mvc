@@ -194,5 +194,6 @@ Une fois que vous avez terminé cette étape, envoyez-moi un message sur Discord
 // List : rajouter boutons action + liens qui récupèrent l'id de l'utilisateur
 // Update : formulaire avec informations à changer
 // Show : tableau avec informations sur l'utilisateur
-// 2. Instancier dans les méthodes update(), show() et delete()
+// 2. Rajouter une route delete_user dans le routeur
+// 3. Instancier les méthodes du UserManager nécessaires dans les méthodes update(), show() et delete() du UserController
 ```
