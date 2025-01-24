@@ -142,3 +142,21 @@ Commençons par remplir le template qu'elle appelle : templates/users/create.pht
 Comme tous les formulaires en PHP, il a besoin d'une action et d'une method, la méthode, ça ne change pas : c'est post. Mais à votre avis, laquelle de nos routes sera son action ? Mettez-la en place.
 
 Une fois que vous avez terminé cette étape, envoyez-moi un message sur Discord pour obtenir la suite des consignes.
+
+## Étape 9
+
+Maintenant que vous savez que votre formulaire de création d'utilisateur va appeler la route `check_create_user` nous allons nous occuper d'elle.
+
+Elle a principalement 3 chose à faire :
+
+1. Récupérer les données du formulaire pour hydrater une instance de la classe `User`
+2. Instancier un `UserManager`et transmettre l'instance fraichement créée à sa méthode `create()`
+3. Rediriger vers la page de liste des utilisateurs
+
+Implémentez ces trois comportements puis tester le fonctionnement de votre création d'utilisateur (en vérifiant s'il apparait dans votre base de données).
+
+## Étape 10
+
+Dans cette étape, je vais vous demander d'utiliser le logiciel de votre choix (canva, Google Draw, MS Paint ...) pour créer un schéma de ce qui se passe lorsque vous appelez l'URL `index.php?route=create_user` puisque vous soumettez le formulaire. Vous pouvez vous inspirer du schéma de fonctionnement du MVC présent dans le cours.
+
+![image schéma](diagram2.png)
