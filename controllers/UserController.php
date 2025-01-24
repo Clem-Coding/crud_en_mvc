@@ -19,6 +19,10 @@ class UserController
         $route = "create_user";
         require "templates/layout.phtml";
     }
+
+
+
+
     public function checkCreate(): void
     {
 
@@ -49,6 +53,9 @@ class UserController
 
     public function list(): void
     {
+
+        $userManager = new UserManager();
+        $users = $userManager->findAll();
 
         $route = "list";
         require "templates/layout.phtml";

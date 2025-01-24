@@ -173,7 +173,7 @@ Une fois que vous avez terminé cette étape, envoyez-moi un message sur Discord
 // 1. Remplir le template List avec un tableau à 5 colonnes : Id/Prénom/Nom/email/actions
 // 2. Dans la méthode list() du UserController, juste avant de require le layout,instancier la méthode findAll() du UserManager
 // dans une variable (exemple : userData).
-//3.  Insérer les données du tableau dans le template List, en effectuant une boucle sur le tableau userData qui va
+// 3. Insérer les données du tableau dans le template List, en effectuant une boucle sur le tableau userData qui va
 //    insérer une nouvelle ligne tr dans le tableau à chaque utilisateur parcouru
 ```
 
