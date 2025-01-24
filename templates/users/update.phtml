@@ -1,3 +1,24 @@
 <main class="container mt-5">
-    <h1 class="display-4 text-center">Mettre à jour un utilisateur</h1>
+    <h1 class="display-4 text-center">Modifier un utilisateur : <?= "{$user->getFirstName()} {$user->getLastName()}" ?></h1>
+
+
+    <form action="index.php?route=check_update_user&id=<?= $user->getId() ?>" method="POST" class="shadow p-4 rounded bg-light">
+        <div class="mb-3">
+            <label for="first_name" class="form-label visually-hidden">Prénom</label>
+            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Entrez votre prénom" required>
+        </div>
+        <div class="mb-3">
+            <label for="last_name" class="form-label visually-hidden">Nom</label>
+            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Entrez votre nom" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label visually-hidden">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Entrez votre email" required>
+        </div>
+
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Modifier l'utilisateur</button>
+        </div>
+    </form>
+
 </main>

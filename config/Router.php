@@ -24,6 +24,9 @@ class Router
         } elseif (isset($get["route"]) && $get["route"] === "check_update_user") {
             $userController = new UserController();
             $userController->checkUpdate();
+        } elseif (isset($get["route"]) && $get["route"] === "delete_user") {
+            $userController = new UserController();
+            $userController->delete();
         } else {
 
             $userController = new UserController();

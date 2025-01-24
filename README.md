@@ -180,3 +180,19 @@ Une fois que vous avez terminé cette étape, envoyez-moi un message sur Discord
 ## Étape 12
 
 Implémentez les consignes que vous avez rédigées à l'étape 11.
+
+## Étape 13
+
+Pour pouvoir implémenter les routes qui nous permettent d'afficher le détail d'un utilisateur, de le modifier ou de le supprimer, nous allons devoir ajouter un comportement supplémentaire à nos URLs. Essayez de deviner l'information qui pourrait nous manquer.
+
+Une fois que vous avez terminé cette étape, envoyez-moi un message sur Discord pour obtenir la suite des consignes.
+
+## Étape 14
+
+```js
+// 1. Implémenter les templates
+// List : rajouter boutons action + liens qui récupèrent l'id de l'utilisateur
+// Update : formulaire avec informations à changer
+// Show : tableau avec informations sur l'utilisateur
+// 2. Instancier dans les méthodes update(), show() et delete()
+```
