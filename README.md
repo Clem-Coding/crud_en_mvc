@@ -160,3 +160,23 @@ Implémentez ces trois comportements puis tester le fonctionnement de votre cré
 Dans cette étape, je vais vous demander d'utiliser le logiciel de votre choix (canva, Google Draw, MS Paint ...) pour créer un schéma de ce qui se passe lorsque vous appelez l'URL `index.php?route=create_user` puisque vous soumettez le formulaire. Vous pouvez vous inspirer du schéma de fonctionnement du MVC présent dans le cours.
 
 ![image schéma](diagram2.png)
+
+## Étape 11
+
+Maintenant que vous avez vu le processus complet pour la création d'un `User`, vous allez devoir rédiger vos propres consignes pour le processus d'affichage de la liste des utilisateurs.
+
+Écrivez ces consignes dans un fichier `prenom-etape-11.md` (en remplaçant le mot prénom par votre prénom) mais ne les implémentez pas.
+
+Une fois que vous avez terminé cette étape, envoyez-moi un message sur Discord pour obtenir la suite des consignes.
+
+```js
+// 1. Remplir le template List avec un tableau à 5 colonnes : Id/Prénom/Nom/email/actions
+// 2. Dans la méthode list() du UserController, juste avant de require le layout,instancier la méthode findAll() du UserManager
+// dans une variable (exemple : userData).
+//3.  Insérer les données du tableau dans le template List, en effectuant une boucle sur le tableau userData qui va
+//    insérer une nouvelle ligne tr dans le tableau à chaque utilisateur parcouru
+```
+
+## Étape 12
+
+Implémentez les consignes que vous avez rédigées à l'étape 11.
