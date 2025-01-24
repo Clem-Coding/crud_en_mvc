@@ -1,8 +1,11 @@
 <main class="container mt-5">
-    <h1 class="display-4 text-center">Modifier un utilisateur : <?= "{$user->getFirstName()} {$user->getLastName()}" ?></h1>
+    <h1 class="display-4 text-center">Modifier un utilisateur·rice· : <?= "{$user->getFirstName()} {$user->getLastName()}" ?></h1>
 
 
     <form action="index.php?route=check_update_user&id=<?= $user->getId() ?>" method="POST" class="shadow p-4 rounded bg-light">
+
+        <!-- //ou  <input type="hidden" name="id" value="<?= $user->getId() ?>"> 
+         et récupérer l'id dans le UserController  grace à la méthode POST-->
         <div class="mb-3">
             <label for="first_name" class="form-label visually-hidden">Prénom</label>
             <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Entrez votre prénom" required>
@@ -17,7 +20,7 @@
         </div>
 
         <div class="d-grid">
-            <button type="submit" class="btn btn-primary">Modifier l'utilisateur</button>
+            <button type="submit" class="btn btn-primary">Modifier l'utilisateur·rice·</button>
         </div>
     </form>
 
